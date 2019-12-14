@@ -1,0 +1,7 @@
+Data link layer protocol
+checksum
+CPC
+Hamming code
+framing:
+	-bit stuffing
+	-byte stuffing

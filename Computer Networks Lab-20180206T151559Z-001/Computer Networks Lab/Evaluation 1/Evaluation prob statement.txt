@@ -1,0 +1,15 @@
+Simulate Client Server Environment using socket programming for the following:
+
+Implement two different variations of file transfer server. One is Bandwidth division multiple access file transfer and other is Time division multiple access file 
+transfer server and compare the time required to transfer data using the two resource sharing policies.
+
+Hint : Implement one server and one client over stream socket API. The server is simply a file transfer server that forwards a file when a client requests for the same.
+However the policies varies depending on how it handles requests from multiple clients.
+
+Hint 2: Whenever the BDMAFT server recieves requests from multiple clients, it handles the request in parallel. That is, for every client request, it simply forks a 
+child process and the child process handles the file transfer. Therefore if there are 3 child processes running in parallel, then the total bandwidth is subdivided 
+among those 3 child processes.
+
+Hint 3: For TDMAFT multiple client file download requests are handled in a sequential round robin fashion. Whenever a new request comes from a client, the request
+is kept in a write queue. Assume that there are 3 such requests in the write queue. Then the requests are processed using a sequential round robin fashion with a 
+predetermined time slice. This can be implemented using a select() system call. 

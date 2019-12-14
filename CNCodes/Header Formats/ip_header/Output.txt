@@ -1,0 +1,12 @@
+Initiation by serverVersion : 1 
+Header length : 11 
+Type of service : 1111 
+Total Length : 4444 
+Identifier : 5555 
+Flags : aeee 
+Fragmentation Offset : 7777 
+Time to live : aa
+Protocol : aaaa 
+Internet Checksum : bbbb 
+Source Address : ccccdddd
+Destination Address : 44445555
